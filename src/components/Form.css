@@ -7,7 +7,7 @@
     font-size: 1.25rem;
     outline: none;
     border: none;
-    border-bottom: 1px solid #c5f6fa;
+    border-bottom: 1px solid #ffa8a8; /* 입력창 아래 */
   }
   
   .create-button {
@@ -16,14 +16,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1rem;
-    background: #22b8cf;
+    background: #ff6b6b; /* 추가 버튼 색상 */
     border-radius: 3px;
-    color: white;
+    color: #ffffff; /* 추가 버튼 안 글자 색상 */
     font-weight: 600;
     cursor: pointer;
   }
   
   .create-button:hover {
-    background: #3bc9db;
+    background: #adb5bd; /* 추가버튼에 마우스 올려놓을 때 */
   }
   

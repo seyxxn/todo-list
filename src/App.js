@@ -7,13 +7,15 @@ import TodoItemList from './components/TodoItemList';
 class App extends Component {
 
   id = 3 // 이미 0,1,2 가 존재하므로 3으로 설정
+  // todo 객체들을 구분하기 위해 id 값을 지정할 것이다.
+  // 데이터가 추가 될 때 마다 this.id 값이 1씩 올라가게 설정
 
   state = {
     input: '',
-    todos: [
-      { id: 0, text: ' 리액트 소개', checked: false },
-      { id: 1, text: ' 리액트 소개', checked: true },
-      { id: 2, text: ' 리액트 소개', checked: false }
+    todos: [ // 초기 state 정의하기
+      { id: 0, text: ' 오늘의 할일을 정리해보세요', checked: false },
+      { id: 1, text: ' 완료했다면 클릭해주세요', checked: true },
+      { id: 2, text: ' seize the day ! ', checked: false }
     ]
   }
 
@@ -29,7 +31,7 @@ class App extends Component {
       input: '', // 인풋 비우고
       // concat 을 사용하여 배열에 추가
       todos: todos.concat({
-        id: this.id++,
+        id: this.id++,  // 데이터가 추가 될 때 마다 this.id 값이 1씩 올라가게 설정
         text: input,
         checked: false
       })

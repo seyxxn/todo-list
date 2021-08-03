@@ -8,7 +8,7 @@
   }
   
   .todo-item:hover {
-    background: #e3fafc;
+    background: #ff8787; /* 리스트에 마우스 올려놓을때 색상*/
   }
   
   /* todo-item 에 마우스가 있을때만 .remove 보이기 */
@@ -18,13 +18,13 @@
   
   /* todo-item 사이에 윗 테두리 */
   .todo-item + .todo-item {
-    border-top: 1px solid #f1f3f5;
+    border-top: 1px solid #ffe3e3;
   }
   
   
-  .remove {
+  .remove { /* 지우는 버튼 (x) 색상 */
     margin-right: 1rem;
-    color: #e64980;
+    color: #e9ecef;
     font-weight: 600;
     opacity: 0;
   }
@@ -34,7 +34,7 @@
     word-break: break-all;
   }
   
-  .checked {
+  .checked { /*완료한 항목 글자 색상*/
     text-decoration: line-through;
     color: #adb5bd;
   }
@@ -43,6 +43,6 @@
     font-size: 1.5rem;
     line-height: 1rem;
     margin-left: 1rem;
-    color: #3bc9db;
+    color: #f03e3e;
     font-weight: 800;
   }
